@@ -9,10 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">InetBankingV1</th></tr>
-<tr><td><a href="#t0">BankingApp Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">30,077</td><td></td><td></td></tr>
+<tr><td><a href="#t0">BankingApp Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,429</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InetBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.inetbanking.testCases.TC_AddCustomerTest_003</td><td><a href="#m0">addNewCustomer</a></td><td rowspan="1">1647244545977</td><td rowspan="1">19082</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InetBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.inetbanking.testCases.TC_AddCustomerTest_003</td><td><a href="#m0">addNewCustomer</a></td><td rowspan="1">1647330696894</td><td rowspan="1">13824</td></tr></tbody>
 </table>
-<h2>BankingApp Test</h2><h3 id="m0">com.inetbanking.testCases.TC_AddCustomerTest_003#addNewCustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BankingApp Test</h2><h3 id="m0">com.inetbanking.testCases.TC_AddCustomerTest_003#addNewCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;japneeshs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:189c:43f5:313e:2878%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/27/hx2qvjx17rl...}, goog:chromeOptions: {debuggerAddress: localhost:54890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 723384aed79dfaf28b3e192913c8bf30
+*** Element info: {Using=name, value=addr}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at com.inetbanking.pageObjects.AddCustomerPage.setaddress(AddCustomerPage.java:89)
+	at com.inetbanking.testCases.TC_AddCustomerTest_003.addNewCustomer(TC_AddCustomerTest_003.java:38)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
